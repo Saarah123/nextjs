@@ -1,6 +1,7 @@
 import { useState} from 'react';
 import axios from 'axios';
-import Error from 'next/error';
+import Error from './Error';
+
 
 export default function Home() {
   const [data, setData] = useState({})
@@ -30,6 +31,7 @@ localStorage.setItem("location",JSON.stringify(data));
   return (
     <>
     {find == true?(
+      
    <Error/>
 )
 
